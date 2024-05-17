@@ -1,0 +1,330 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.SpiritblossomModel
+@{
+    ViewData["Title"] = "Spirit Blossom";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">Cosmic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">Coven</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">High Noon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" 
+                                style="text-align:center;color:PINK;text-shadow: 0 0 3px #000000, 0 0 5px PURPLE; ">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">Porcelain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">Bee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center;color:PINK;text-shadow: 0 0 3px #000000, 0 0 5px PURPLE; " id="#">SPIRIT BLOSSOM (Universe)</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Ahri-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Ahri.jpg" alt="Ahri" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Ahri</p>
+                                    <p class="desc">The famed Spirit of Salvation, and the fox all mortals are beckoned towards when their souls arrive to the spirit realm. A capricious, whimsical spirit who sees the fate of the living as a game of chase, she offers the chance for souls to find their final rest… but will not intervene if they stray from the path. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Aphelios-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Aphelios.jpg" alt="Aphelios" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Aphelios & Spirit Blossom Alune</p>
+                                    <p class="desc">Ionians share whispered stories of the twin spirits of the night, Aphelios and Alune. It is said the darkening of the sky comes from the brother's armaments, tearing the fabric of blues and whites apart to create an obsidian canvas painted with stars. The sister's motives are more... mysterious.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Cassiopeia-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Cassiopeia.jpg" alt="Cassiopeia" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Cassiopeia</p>
+                                    <p class="desc">Rumored to have once been a beautiful princess, legend says Cassiopeia vanished into the mountains when her sister staged a coup, never to return. So great was her beauty, and so renowned her cunning, that a shrine was built to honor this 'spirit of temptation', until her story was accepted into popular folklore.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Darius-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Darius.jpg" alt="Darius" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Darius</p>
+                                    <p class="desc">Darius' body fell to the dirt, yet another soldier's sacrifice. But his soul would not rest. Picking up his axe just as soon as it was knocked from his mortal hand, the Spirit of War arose. A calamity motivated only towards bloodshed, Darius stalks the mortal world, searching for the thrill of battle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Evelynn-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Evelynn.jpg" alt="Evelynn" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Evelynn</p>
+                                    <p class="desc">Come. Leave your flesh behind and pass into the Spirit World. Bring with you only your desires, your vices, your painful memories. Let the Spirit of Love feed on these unwanted temptations, for her hunger is ravenous. Evelynn will show you peace at last. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Kindred-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Kindred.jpg" alt="Kindred" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Kindred</p>
+                                    <p class="desc">In the Ionian tradition, the Kindred are interpreted as a child and her beastly companion, endlessly playing games with one another until they are called to perform their duties. The two do not know where they came from, but it is said they feel a sense of loss for someone they knew long ago… </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Teemo-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Teemo.jpg" alt="Teemo" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Teemo</p>
+                                    <p class="desc">A trickster spirit and a child of the forest, Teemo is famed across Ionia as the embodiment of nature… though his more onerous accolade is the king of pranks. A consummate gadfly and lover of all things annoying, his exploits in tricking mortals have graced the pages of Ionian history for hundreds of years. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Prestige Teemo-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/PrestigeTeemo.jpg" alt="Prestige Teemo" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Prestige Spirit Blossom Teemo</p>
+                                    <p class="desc">Having abstained from pranking his “best friend forever” literally once, the Spirit of Salvation has gifted Teemo with his wildest dream—becoming shiny and gold. Never one to leave anybody alone, ever, he has promised his BFF to prank them at every opportunity, every day, until they die and join him in the spirit realm. Good luck to them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Master Yi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Yi.jpg" alt="Master Yi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Master Yi</p>
+                                    <p class="desc">Legends speak of Master Yi, a swordsman who took but one student in his lifetime. After an unceremonious betrayal, Yi perished—not from a blade, but from a broken heart. Now the Spirit of Legacy roams the spirit world, searching for a pupil. He is lost, anyone that joins him destined to face the same fate. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Prestige Master Yi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/PrestigeYi.jpg" alt="Master Yi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Prestige Spirit Blossom Master Yi</p>
+                                    <p class="desc">Yi arrives at the Spirit Blossom Fashion Festival, donning tinted shades and the finest fabrics. While others prefer to celebrate with close family and friends, Yi revels in the attention his outfit brings, intent to cement his style "legacy".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Riven-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Riven.jpg" alt="Riven" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Riven</p>
+                                    <p class="desc">A brave warrior from an ancient land, Riven was ignobly cut down in the heat of battle thousands of years ago, her sword shattering in the process. Unable to find peace, she obsessively scours an otherworldly battlefield for pieces of her broken blade, possessed by a horrific darkness that guides her into oblivion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sett-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Sett.jpg" alt="Sett" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Sett</p>
+                                    <p class="desc">Some guide the dead down the path; others tempt them from it. Another still has no allegiances, as his spirit lies in conflict with itself. Born from Kanmei and Akana, Sett lived harmoniously until, abandoned by his father, he sought retribution. Now he can only catch whispers of salvation as he spends his days challenging slain warriors, testing their worth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Soraka-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Soraka.jpg" alt="Soraka" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Soraka</p>
+                                    <p class="desc">In a secluded corner of the Akana forest, Soraka weeps for those she's lost. Each life cut short she longed to save, but for as many that welcome her as a savior, there are others who see her power as a merciless cruelty. To the Spirit of Pity, death is never a blessing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Syndra-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Syndra.jpg" alt="Syndra" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Syndra</p>
+                                    <p class="desc">Children hear stories of the savior of lost souls, the ever-reclusive Spirit of Freedom. One such speaks of a tree that wrapped its roots around a wandering wisp. The wisp struggled alone—until Syndra ripped off the bindings that held it tight, as she would do for all creatures, lest they be lost forever.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Thresh-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Thresh.jpg" alt="Thresh" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Thresh</p>
+                                    <p class="desc">An ancient demon of obsession, Thresh delights in tormenting the spirits of those he deems as flawed, but blossoming with potential. He haunts the spiritual afterlife as a supreme collector of souls, tempting the dead away from their path to salvation until they are trapped for eternity within their own memories.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tristana-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Tristana.jpg" alt="Tristana" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Tristana</p>
+                                    <p class="desc">For those that seek glory on the battlefield, to those that look to the spirits for a bountiful harvest, Tristana greets all with a toothy grin. The Spirit of Chance has no favorites, no obligations or motives. She simply delights in the chaos, the fear in men's eyes at the roll of the dice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Vayne-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Vayne.jpg" alt="Vayne" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Vayne</p>
+                                    <p class="desc">Vayne came from a lost clan of monster hunters, annihilated to the last when the primordial demon of pain chanced upon their hidden village. Unable to let go, and doomed to her own obsessions for eternity, she hunts the creature without end, always unable to catch it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Yasuo-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Yasuo.jpg" alt="Yasuo" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Yasuo</p>
+                                    <p class="desc">Long ago, two brothers fought a bitter war across Ionia. Yasuo, the younger brother, was a warlord renowned for his roguish demeanor—until he was accused of crimes against the country and took up arms to defend himself. Both were fated to fall in their final duel… a lesson, perhaps, in pride and hubris. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Yone-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Yone.jpg" alt="Yone" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Yone</p>
+                                    <p class="desc">Long ago, two brothers fought a bitter war across Ionia. Yone, the older brother, was a warlord renowned for his adherence to honor and duty. He fought to defend the country against those who would break its rites and rituals - until he was forced to confront his own brother for his crimes. Both were fated to fall in their final duel… a lesson, perhaps, in pride and hubris. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Yorick-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Spiritblossom/Yorick.jpg" alt="Yorick" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Spirit Blossom Yorick</p>
+                                    <p class="desc">The grove he called home burnt to ashes before his very eyes. While another retreated into solitude, Yorick allowed the rage to consume him. The flowers and trees that bloom in the Spirit of Ruin's wake are haunting, the gardeners that tend to them howling creatures of the night.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+
+

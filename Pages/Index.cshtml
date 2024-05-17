@@ -1,0 +1,115 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "My Photo Album";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        padding: 24px 36px;
+        border-radius:3px;
+    }
+
+    .incontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px 36px;
+        border-radius: 7px;
+        font-size: 10px;
+    }
+
+    .container .image {
+        width: 25%;
+        text-align:center;
+        border-radius: 1px;
+    }
+
+    .container img {
+        width: calc(100% - (20px * 2));
+        margin: 20px;
+    }
+
+    .skins-container {
+        width: 100%;
+        border-radius:5px;
+    }
+
+    .skins-title {
+        color: white;
+        text-align: left;
+        padding-bottom:10px;
+    }
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+</style>
+</head>
+<body id="background">
+    <div class="logo">
+        <img src="~/resources/images/league-of-legends-logo.png" style="width:30%"/>
+    </div>
+    <div class="container" style="background-color: #060E1F">
+        <div class="skins-container">
+            <h2 class="skins-title" style="font-weight:100;">ALBUMS</h2>
+
+            <div class="incontainer" style="background-color: #061E36; margin-bottom: 20px; color:white">
+                <h3 style="color: white; font-size:20px">Welcome to My Photo Albums!</h3>
+                <h6 style="font-size:10px;">Welcome to Jhea's photo album of League of Legends champion skins.</h6>
+            </div>
+
+            <div class="incontainer" style="background-color: #061E36;">
+                <div class="image">
+                    <a asp-page="/SunkissedSummer"><img src="~/Resources/Images/PoolParty/Caitlyn.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style=" color:#C9AA71">SUNKISSED SUMMER</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Cosmic"><img src="~/Resources/Images/Cosmic/Nunu.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">COSMIC</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Coven"><img src="~/Resources/Images/Coven/Nocturne.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">ECLIPSE (Universe)</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Highnoon"><img src="~/Resources/Images/Highnoon/Jhin.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">HIGH NOON GOTHIC (Universe)</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Project"><img src="~/Resources/Images/Project/Vayne.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">PROJECT (Universe)</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Spiritblossom"><img src="~/Resources/Images/Spiritblossom/Ahri.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">SPIRIT BLOSSOM (Universe)</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Porcelain"><img src="~/Resources/Images/Porcelain/Amumu.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">PORCELAIN</a>
+                </div>
+                <div class="image">
+                    <a asp-page="/Bee"><img src="~/Resources/Images/Bee/Veigar.jpg" /></a>
+                    <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">BEE (Universe)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+

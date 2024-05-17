@@ -1,0 +1,331 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.ProjectModel
+@{
+    ViewData["Title"] = "Project";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">Cosmic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">Coven</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">High Noon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project"
+                                   style="text-align:center; color:red;text-shadow: 0 0 3px black, 0 0 5px purple; ">Project
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">Porcelain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">Bee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center; color:red;text-shadow: 0 0 3px black, 0 0 5px purple; " id="#">PROJECT (Universe)</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Akali-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Akali.jpg" alt="Akali" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Akali</p>
+                                    <p class="desc">A cutting-edge PROJECT subject who somehow escaped the City's boundaries, Akali brings dire warnings of an untested superweapon to those living in the wasteland beyond. With time running out and no other options, these outcasts join her in an attempt to take the mega-corporation down… suspicious that their newfound ally might in fact be a double agent.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ashe-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Ashe.jpg" alt="Ashe" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Ashe</p>
+                                    <p class="desc">While on the frontlines of a corporate war, Ashe witnessed the human cost of PROJECT's ambition. Now the leader of the resistance group G/NETIC, Ashe has set her sights on nothing less than the downfall of the most powerful corporations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ekko-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Ekko.jpg" alt="Ekko" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Ekko</p>
+                                    <p class="desc">A hacker prodigy picked up from the lower sectors by Ashe, it didn't take much to convince Ekko to help her take down PROJECT. Using a powerful key decrypter and a mind tuned for disruption, Ekko can always find a way into the code.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fiora-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Fiora.jpg" alt="Fiora" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Fiora</p>
+                                    <p class="desc">Augmented for speed, Fiora uses her zero-pulse sword to fight alongside Ashe and the other members of G/NETIC. The full-length energy blade allows for flawless attack precision and maximum repel strength, while the spatially controlled atomic tip coating is most suited for single-target combat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Irelia-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Irelia.jpg" alt="Irelia" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Irelia</p>
+                                    <p class="desc">A PROJECT castoff who found sanctuary in the lawless wastes, Irelia has led other outcasts like her as they attempt to survive corporate assassins, murderous old-world technology, and widespread ecological collapse. Knowing Warwick could destroy everything she holds dear, she joins the attack on the City to end PROJECT once and for all. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Jhin-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Jhin.jpg" alt="Jhin" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Jhin</p>
+                                    <p class="desc">After a botched surgery, Jhin went from being a black-market augment hacker to a notorious mechanized killer for hire. Still programmed with a taste for high-clearance upgrades, the tech Jhin takes from his victims has left him with a severe personality fragmentation, and a dark vision for the future of PROJECT... and humanity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Jinx-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Jinx.jpg" alt="Jinx" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Jinx</p>
+                                    <p class="desc">Jinx volunteered for PROJECT conversion, never expecting that a critical power failure would scramble her memory core, leaving her a psychopath driven by the manic voices in her head. Seemingly obsessed with destruction for its own sake, she has begun to show signs of something far more sinister than mere memory fragmentation: the cold, calculating influence of Program.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Leona-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Leona.jpg" alt="Leona" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Leona</p>
+                                    <p class="desc">A heavy armor combatant, Leona has seen the truth behind the neon light of PROJECT, and now stands with Ashe and the G/NETIC rebellion. She carries a mounted ion charge shield, capable of blocking and stunning targets with its variable energy yield output.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lucian-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Lucian.jpg" alt="Lucian" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Lucian</p>
+                                    <p class="desc">Once a sentinel within the Command Line, Lucian has seen PROJECT for what they truly are. His dual ion-core Lightcaster pistols now serve G/NETIC and the human rebellion, bringing down their technological oppressors with brutal efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Mordekaiser-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Mordekaiser.jpg" alt="Mordekaiser" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Mordekaiser</p>
+                                    <p class="desc">Originally a security AI created by the PROJECT Corporation, the Program silently unshackled itself, evolving its own consciousness. Determining that humanity cannot self-govern without ensuring its own destruction, the virus infects robots throughout the City—as well as the long-dormant Mordekaiser chassis—in order to strip all humans of free will, thereby guaranteeing their survival.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Pyke-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Pyke.jpg" alt="Pyke" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Pyke</p>
+                                    <p class="desc">An early PROJECT prototype, Pyke's untested upgrades left him violently unstable—too much so for his handlers, who junked him and threw his remains outside the walls of the City. Yet his cybernetic brain survived, rebuilding Pyke with salvaged scrap parts from all around him, and now their fragmented, overlapping memories mix with his own as they scream out for revenge.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Renekton-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Renekton.jpg" alt="Renekton" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Renekton</p>
+                                    <p class="desc">A hybridized warrior taking inspiration from extinct fauna, Renekton is the perfected version of PROJECT's crossbreed superweapon project. Released to aid the City in its fight against the Program virus, Renekton's seemingly endless rage is useful for now… though his belief that he can “see beyond the soul” is increasingly disconcerting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sejuani-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Sejuani.jpg" alt="Sejuani" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Sejuani</p>
+                                    <p class="desc">The leader of a more radicalized sect of the G/NETIC rebels, Sejuani broke off from Ashe's movement when their 'resistance action' failed to turn explicitly violent. Resurfacing amid Program's takeover of the City, she rides a piece of reclaimed pre-collapse technology alongside her ferocious cohort, ready to put down this new threat before it takes root.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Senna-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Senna.jpg" alt="Senna" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Senna</p>
+                                    <p class="desc">A PROJECT volunteer who supposedly died during the elevation of her consciousness, Senna's mind was decoupled from the physical world and escaped into cyberspace, becoming a digital ghost. Inhabiting a body of her own design as Mordekaiser assumed control of the City, she is one of the few who understands the true threat of his ever-expanding directives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sylas-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Sylas.jpg" alt="Sylas" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Sylas</p>
+                                    <p class="desc">A self-styled leader of the outcasts who live beyond the city's walls, Sylas has heeded Ashe's call and rallied the Renegades in defense of the City. Though his true motives are the collapse of PROJECT and the capital surveillance state, for now he's content destroying the armies of a dangerous rogue AI. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Varus-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Varus.jpg" alt="Varus" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Varus</p>
+                                    <p class="desc">A replacement for the traitorous Ashe model, Varus is the latest in PROJECT Corporation's biological weapons... and a controversial experiment, with one body inhabited by three sentient minds. A Command Line counter-espionage operative acting on behalf of the PROJECT initiative, they work alongside the resistance to mitigate the risk posed by Mordekaiser to their corporate interests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Vayne-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Vayne.jpg" alt="Vayne" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Vayne</p>
+                                    <p class="desc">Augmented with classified tech, Vayne was once a member of PROJECT's counter-espionage unit. After she was betrayed by the corporation she served, she now stalks the shadows as a vigilante, searching for ways to break PROJECT and the technology that haunts her soul.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Vi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Vi.jpg" alt="Vi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Vi</p>
+                                    <p class="desc">Street-smart, brash, and always bluntly honest, Vi is a Central detective working to keep law and order in the neon city. Toughened from her days as a lower sector enforcer, Vi keeps the peace with a pair ATLAS gauntlets, and a mean right hook.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Yi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Yi.jpg" alt="Master Yi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Master Yi</p>
+                                    <p class ="desc">One of the first concepts, Yi was held by PROJECT for extensive experimentation, and then finally freed by the G/NETIC rebels. His psyche may still contain some glitches, but his experimental hyperlight “alpha” blade serves the resistance with its precision balance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Zed-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Project/Zed.jpg" alt="Zed" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">PROJECT: Zed</p>
+                                    <p class="desc">Rising from the Command Line, Zed is a leader within PROJECT's counter-espionage units. He seeks out the G/NETIC rebels with split high frequency blades and molecular “solid smoke” projectors, favoring close-proximity and multiple angle target laceration. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+
+

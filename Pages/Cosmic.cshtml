@@ -1,0 +1,332 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.CosmicModel
+@{
+    ViewData["Title"] = "Cosmic";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic"
+                                style="text-align:center; color:#01FFFF;text-shadow: 0 0 3px BLUE, 0 0 5px #002366; ">Cosmic
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">Coven</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">High Noon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">Porcelain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">Bee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center; color:#01FFFF;text-shadow: 0 0 3px BLUE, 0 0 5px #002366; " id="#"> EVENT HORIZON / COSMIC</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Anivia-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Anivia.jpg" alt="Anivia" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">    
+                                    <p style="text-align:center;">Cosmic Flight Anivia</p>
+                                    <p class="desc">A regal and truly ancient being, whose swirling energies give birth to entire galaxies. She has begun to wall off her creations, fearing the return of an ancient, golden foe that her kind has long sought to forget…</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ashe-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Ashe.jpg" alt="Ashe" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Queen Ashe</p>
+                                    <p class="desc">Benevolent ruler of the stars, Ashe fires her arrows across the endless darkness of space, creating new constellations wherever they fall. Her court drifts between galaxies, replenishing all the lights that have faded.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Bel'Veth-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Bel'Veth.jpg" alt="Bel'Veth" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Matriarch Bel'Veth</p>
+                                    <p class="desc">A lonely cradle of life amongst the stars, Bel'Veth wanders ruined space in the aftermath of the Cosmic Court's destruction. She refuses to allow the Dark Star's entropy to spread any further, and so has begun plucking chosen creatures from dying worlds, imbuing them with the power to fight by her side and contain the corruption before it is too late.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Cosmic Lux-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/CosmicLux.jpg" alt="Lux" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Lux</p>
+                                    <p class="desc">The right hand of Queen Ashe, Lux weaves celestial constellations, bringing order to a universe drifting towards entropy. When the Dark Star began corrupting members of the Cosmic Court, Lux stepped forward to confront Thresh. Yet she harbors a terrible secret—a shard of darkness that has always lived within her heart, whispering temptations…</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Dark Cosmic Lux-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/DarkCosmicLux.jpg" alt="Lux" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Dark Cosmic Lux</p>
+                                    <p class="desc">Once the right hand of Queen Ashe, Lux embraced the darkness in her heart, answering the mad call of the Dark Star. Finally seeing the truth, she rejects the Cosmic Court, instead serving her own dark ambition to quiet the banal noise of creation. For she now knows her true fate—to reign as Queen of a Dark Court, and rightful master of the Dark Star.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Hecarim-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Hecarim.jpg" alt="Hecarim" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Charger Hecarim</p>
+                                    <p class="desc">A knight in the Queen's court, he leads his calvary across the sky, forever expanding the outer edge of creation—bringing new life wherever his hooves fall.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Illaoi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Illaoi.jpg" alt="Illaoi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Invoker Illaoi</p>
+                                    <p class="desc">An entity who carries the raw power of cosmic creation in her hands, Illaoi can slam the orb she holds into the very fabric of reality, allowing time to flow forward even in places where life has been eradicated.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Jhin-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Jhin.jpg" alt="Jhin" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Dark Cosmic Jhin</p>
+                                    <p class="desc">Jhin was an interstellar entity, consumed by the Dark Star and given new purpose. Now his ageless mind is infected by visions of omnipotence, and consumed by an insatiable hunger. He scours entire regions of space seemingly on a whim, using the remnants to create bizarre, silent objets d'art. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Karma-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Karma.jpg" alt="Karma" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Dark Star Karma</p>
+                                    <p class="desc">Karma was a galaxy-spanning civilization dedicated to pacifism and personal enlightenment, unceremoniously erased from reality and reborn as a star-consuming horror. Devouring entire galactic systems, she enforces a dread order upon the cosmos, meditating in the vast oceans of emptiness where once there were stars.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Kassadin-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Kassadin.jpg" alt="Kassadin" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Reaver Kassadin</p>
+                                    <p class="desc">Born before the kindling of the stars, Kassadin stands alone in space's vast void. He watches over all things, a sentinel awaiting the end of this universe… and the beginning of the next.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lissandra-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Lissandra.jpg" alt="Lissandra" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Dark Cosmic Lissandra</p>
+                                    <p class="desc">Once a cosmic entity charged with identifying future threats to the cosmos, her hunger for ever greater knowledge drew her into conflict with the Dark Star, which consumed her. Transformed into a mad doomsayer who sees a “true” universe in the ashes of this one, she has become the very end she once feared.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nautilus-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Nautilus.jpg" alt="Nautilus" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Paladin Nautilus</p>
+                                    <p class="desc">A creature found aimlessly wandering between galaxies, no one knows where Nautilus came from, or how he has stayed alive in the space between stars. But his natural resistance to the entropic forces of the Dark Star attracted the attention of Bel'Veth. He has found meaning and purpose as a Paladin, where before he simply drifted amongst the cosmos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nidalee-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Nidalee.jpg" alt="Nidalee" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Huntress Nidalee</p>
+                                    <p class="desc">A cosmic tracker and ferocious hunter, Nidalee travels the galaxy in an eternal hunt, shifting her shape to hide among the sky's wandering stars. Tasked with finding and caring for newborn stars, she is dedicated to defending them from the ever hungry Dark Star corruptants.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nunu-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Nunu.jpg" alt="Nunu" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Paladins Nunu & Willump</p>
+                                    <p class="desc">Despite the destruction of their respective homes, Nunu and Willump hold onto the innocence that so many have lost. Bel'Veth, having never seen such joy even in the face of despair, bestowed cosmic power upon them. Now they spread that joy wherever they go, fighting the Dark Star's destructive force with their own creativity and boundless imagination.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sion-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Sion.jpg" alt="Sion" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Paladin Sion</p>
+                                    <p class="desc">Sion was a warrior who found a way to fight his planet's destruction at the hands of the Dark Star to his dying breath. Bel'Veth, fascinated by his stubborn tenacity, raised him from that dying world. Now he fights by her side, a battering ram of force and violence turned towards a singular purpose: eliminating the Dark Star.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Thresh-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Thresh.jpg" alt="Thresh" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Dark Star Thresh</p>
+                                    <p class="desc">A cosmic nightmare who worships the all-consuming Dark Star, Thresh vows to feed the whole of existence to his “god” until all matter, time, and thought are erased. His work will be complete when nothing remains, freeing him to finally leap into the singularity and become one with the end of the universe.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Varus-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Varus.jpg" alt="Varus" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Hunter Varus</p>
+                                    <p class="desc">A young member of the cosmic court, minted in the image of the Dark Star corruptant Varus. Tasked with destroying his monstrous doppelganger, this new Varus seeks his place among the stars after his task is finally complete.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Xerath-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Xerath.jpg" alt="Xerath" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Dark Star Xerath</p>
+                                    <p class="desc">As the Dark Star continued on its path across space, it passed through a vibrant system orbiting a supergiant star. Consuming all life and light as it passed , the Dark Star twisted the supergiant into a wrathful corruptant. Thus, Xerath was born—a dark being of malice and annihilation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Xin Zhao-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Xin.jpg" alt="Xin Zhao" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Defender Xin Zhao</p>
+                                    <p class="desc">Great horrors are attracted to the light of newborn stars—from the corruptants of the Dark Star, to squirming, ancient things yet unknown. Xin Zhao is the steadfast protector of these cosmic cradles, driving off any that would devour them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Master Yi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Cosmic/Yi.jpg" alt="Master Yi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Cosmic Blade Master Yi</p>
+                                    <p class="desc">Gliding effortlessly from star to star, Yi flashes through the night sky with celestial grace, his blade arcing with crystalline precision through the fabric of the universe itself.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+      
+

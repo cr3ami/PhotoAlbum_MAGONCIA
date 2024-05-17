@@ -1,0 +1,254 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        color: white;
+        margin-bottom: 60px;
+    }
+    #background {
+        background-image: url('../resources/images/background/runetera.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        font-family: 'Public Pixel', sans-serif;
+    }
+    .nav-link {
+    font-size:10px;
+    }
+    .desc {
+        font-family: sans-serif;
+    }
+
+    /*CSS Container*/
+    /*CSS Container*/
+    div.row {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        background-color: transparent;
+    }
+
+
+    div.col-4 {
+        margin-left: 40%;
+        text-align: justify;
+        background-color: white;
+    }
+
+    .bg {
+        background-color: white;
+    }
+
+    /*MODAL START*/
+
+    /*modal image */
+    #myImg {
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        #myImg:hover {
+            opacity: 1.3;
+        }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    -webkit-keyframes zoom {
+        from
+
+{
+    -webkit-transform: scale(0)
+}
+
+to {
+    -webkit-transform: scale(1)
+}
+
+}
+
+keyframes zoom {
+    from
+
+{
+    transform: scale(0)
+}
+
+to {
+    transform: scale(1)
+}
+
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* 100% Image Width on Smaller Screens */
+media only screen and (max-width: 700px) {
+    .modal-content
+{
+    width: 100%;
+}
+}
+
+/*modal image end*/
+/*Center image*/
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div.card.shadow-sm {
+    border-radius: 1px;
+    height: 100%;
+    background-color: black;
+}
+
+a.color-25 {
+    color: #884499;
+    text-decoration: none;
+}
+
+a.color-vsinger {
+    color: #00cdba;
+    text-decoration: none;
+}
+
+a.color-need {
+    color: #4455DD;
+    text-decoration: none;
+}
+
+a.color-jump {
+    color: #6CCB20;
+    text-decoration: none;
+}
+
+a.color-vivid {
+    color: #EE1166;
+    text-decoration: none;
+}
+
+a.color-wxs {
+    color: #FF9900;
+    text-decoration: none;
+}
+/* Honkai.html css for bottom text name eg. Kevin */
+small.text-muted-1 {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+img.divide-center {
+    width: 100%;
+}
+/*Pricon css*/
+div.gourmet {
+    background-image: url("/Resources/Images/Princess Connect/gourmet-title.png");
+    height: 540px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+div.carmina {
+    background-image: url("/Resources/Images/Princess Connect/carmina-title.png");
+    height: 540px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+div.twinkle {
+    background-image: url("/Resources/Images/Princess Connect/twinkle/twinkle.png");
+    height: 540px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+div.labyrinth {
+    background-image: url("/Resources/Images/Princess Connect/labyrinth/labristya.png");
+    height: 540px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+div.foreister {
+    background-image: url("/Resources/Images/Princess Connect/foreister/foreister.png");
+    height: 540px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}

@@ -1,0 +1,332 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.HighnoonModel
+@{
+    ViewData["Title"] = "High Noon";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">Cosmic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">Coven</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon"
+                                   style="text-align:center; color:darkorange;text-shadow: 0 0 3px RED, 0 0 5px DARKRED; ">High Noon
+                               </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">Porcelain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">Bee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center; serif; color:darkorange;text-shadow: 0 0 3px RED, 0 0 5px DARKRED; " id="#">HIGH NOON GOTHIC (Universe)</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Ashe-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Ashe.jpg" alt="Ashe" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Ashe</p>
+                                    <p class="desc">A mechanical angel built at the dawn of the pioneer age, Ashe is fueled by the blood of deities gunned down in the infamous land rush that destroyed Heaven. She has adopted a devil-may-care attitude as she seeks adventure, choosing to forgive and protect the same mankind that forever robbed itself of eternal paradise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Darius-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Darius.jpg" alt="Darius" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Darius</p>
+                                    <p class="desc">The once-human Darius was a terrifying manhunter, feared throughout the West for his cunning and brutality. Famously defeated by his brother in a widely publicized duel, his wounded pride eventually twisted into obsession, leading him to strike a deal with the devil Hecarim...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Hecarim-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Hecarim.jpg" alt="Hecarim" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Hecarim</p>
+                                    <p class="desc">When Heaven was destroyed by mortal men, it was only a matter of time until Hell overflowed onto the prairie, bringing with it all the devils who had waited so patiently to escape their confinement. Hecarim and his black riders revel in this newfound freedom, razing everything before them to ash as they stampede across the frontier.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Irelia-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Irelia.jpg" alt="Irelia" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Irelia</p>
+                                    <p class="desc">A fallen angel who escaped the destruction of Heaven, now tainted by ineffable darkness. Irelia has spent years in hiding, thus her return alongside a newly resurrected Senna attests to the presence of powers who would see the heavenly kingdom restored… perhaps for the continued benefit of man, or perhaps for their final damnation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Jhin-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Jhin.jpg" alt="Jhin" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Jhin</p>
+                                    <p class="desc">Need a man dead? Hire any sun-baked lunatic looking to make a name for themselves in the Old West. Need to set an example? Then you should seek out the mechanical assassin known as Jhin—and no one will ever forget what happens at the crossroads of murder and art.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Katarina-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Katarina.jpg" alt="Katarina" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Katarina</p>
+                                    <p class="desc">“My people got swindled. I aim to collect what we're owed,” the Outsider says, pinning her dagger in a wanted poster of the Mechanical Devil. Her eyes burn like stoked coal as she fixes each dusty traveler in her gaze, “And I hear y'all plan on jumpin' the Sulfur Rail, Harbingers. If you're gonna take this devil down, I want in.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Leona-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Leona.jpg" alt="Leona" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Leona</p>
+                                    <p class="desc">The Lady of House Solari lifts her chin against the scorching wind. Ahead lies her family's salvation: the Sulfur Rail, carrying the stolen family fortune, churning across the desert. The only thing that stands in her way is the Mechanical Devil himself. Her sword hums like cicadas in the gloaming. The butterflies gather. Time for the Harbingers to ride.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lucian-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Lucian.jpg" alt="Lucian" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Lucian</p>
+                                    <p class="desc">A former federal marshal and gunslinger for hire, Lucian's soul was corrupted when he made a deal with the devil in order to spare the life of his one true love. Double-crossed, and cursed with the powers of hell, he now hunts this devil across the high frontier, seeking revenge.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Mordekaiser-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Mordekaiser.jpg" alt="Mordekaiser" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Mordekaiser</p>
+                                    <p class="desc">Few meet the Mechanical Devil and live to tell the tale. They describe a behemoth: all steel and gears, fueled by hellfire and fierce enough to scare a man's soul from his skin. He is the King of the Sulfur Rail, reigning over the train to Hell from a throne of stolen gold and infernal iron. Eternal, and unassailable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Samira-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Samira.jpg" alt="Samira" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Samira</p>
+                                    <p class="desc">The poster was straightforward enough: “WANTED: Tahm Kench - Devil, DEAD OR ALIVE”, followed by a generous sum. Only the Mechanical Devil's got that kinda cash to pay. Samira ain't sure why the other bounty hunters seemed so spooked by a little ol' devil hunt. Well, let 'em shy away. This gunpowder witch don't scare easy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Senna-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Senna.jpg" alt="Senna" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Senna</p>
+                                    <p class="desc">Once the greatest gunslinger on the continent, Senna's life would have ended when her heart was torn out by the devil—save for the intervention of a higher authority. Mysteriously resurrected with the heart of an angel and a demonic steed, she has returned to the west to restore the balance of Heaven and Hell... however she sees fit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sion-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Sion.jpg" alt="Sion" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Sion</p>
+                                    <p class="desc">As soon as Sion knew life, he knew rage: rage that ripped the restraints from the operating table; rage that crushed the bones of those men who tried to play at the miracle of Creation; rage that he ain't, nor ever would be, the second clockwork angel they had hoped to construct. Sion knows rage, and so will the world.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tahm Kench-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/TahmKench.jpg" alt="Tahm Kench" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Tahm Kench</p>
+                                    <p class="desc">Tahm Kench is a magnanimous devil: happy to lend a magical sword to a lady in need, or to assist her in robbing the Sulfur Rail, or even to deliver her to a calamitous destiny as a fellow Harbinger of the End Times. He don't need no compensation. She'll just owe him a favor… because in the End, it pays to have friends.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Talon-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Talon.jpg" alt="Talon" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Prestige High Noon Talon</p>
+                                    <p class="desc">Devilishly handsome and wearing the latest in Western chic, Talon is equally ready to rock the runway or ride the open road. Those boots are made for walking, and he'll walk all over anyone standing in his way.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Thresh-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Thresh.jpg" alt="Thresh" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Thresh</p>
+                                    <p class="desc">An ancient devil who stalks the great expanses of the Old West, Thresh's cruel visage is burned into the minds of all living things who fear the day he will come to claim their souls. His arrival spells doom for any settlement, its residents flayed and left to rot in the sun.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Twitch-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Twitch.jpg" alt="Twitch" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Twitch</p>
+                                    <p class="desc">It starts like this: An ill wind blows across the desert, dessicated rats turn up in the streets, rotting under the hot sun. Then the traveling undertaker arrives. No one knows who (or what) he is, nor where he hails from… But it seems even Death has a bone to pick with the King of the Sulfur Rail. Another Harbinger arrives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Urgot-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Urgot.jpg" alt="Urgot" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Urgot</p>
+                                    <p class="desc">Jeremiah James was once a famed railroad baron and millionaire industrialist, who bet his own heart on a game of chance… and lost. Left alone in the desert to die, he bargained with a passing devil, trading his immortal soul for a twisted, monstrous body of gears and iron.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Varus-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Varus.jpg" alt="Varus" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Varus</p>
+                                    <p class="desc">Ain't nothin' for a dead angel to do but resign himself to grief. Varus was content to allow Mordekaiser to take him past the infernal gates themselves… Until a ragtag gang of thieves interrupted his mourning. Varus now picks up his bow once more, riding as a Harbinger. It's high time he got revenge for the massacre of Heaven.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Viktor-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Viktor.jpg" alt="Viktor" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Viktor</p>
+                                    <p class="desc">Many a road to Hell was paved with good intent. Dr. Viktor may be the Mechanical Devil's kept engineer now, but his work began as charity: trying to “rehome” the souls of the dead in clockwork bodies, in order to circumvent mortality itself. Shame that Mordekaiser saw the good doctor's kindness and struck him a deal he could not deny.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Yasuo-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Highnoon/Yasuo.jpg" alt="Yasuo" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">High Noon Yasuo</p>
+                                    <p class="desc">The mysterious and reluctant sheriff of a two-street town, Yasuo is in self-imposed exile after being accused of murder in the eastern territories. Even so, he has driven off entire bandit gangs as well as many of the desert's deadliest threats, saving hundreds of lives along the way.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+
+

@@ -1,0 +1,332 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.CovenModel
+@{
+    ViewData["Title"] = "Coven";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">Cosmic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" 
+                                style="text-align:center; color:darkviolet;text-shadow: 0 0 3px BLUE, 0 0 5px BLUE;">Coven
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">High Noon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">Porcelain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">Bee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center; color:darkviolet;text-shadow: 0 0 3px BLUE, 0 0 5px BLUE; " id="#">ECLIPSE (Universe) / COVEN</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Ahri-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Ahri.jpg" alt="Ahri" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Ahri</p>
+                                    <p class="desc">They came to Ahri at the first stirrings of dusk—the laughter of the Half-Light Jackal, ever stalking the world as it turned towards its own inevitable entropy. A vicious predator and powerful witch, Ahri sucks the life from all she lures close, siphoning it towards her lord within the gloom.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Akali-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Akali.jpg" alt="Akali" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Akali</p>
+                                    <p class="desc">They came to Akali encircling from the tree canopy at an impossible speed, their taunts leading her deeper still into the Elderwood until at last she was lost. Then a voice whispered the choice right into her ear: die in these woods alone or emerge in their charge. And so she walked out of the woods... straight into the arms of the Coven. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Prestige Akali-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/PrestigeAkali.jpg" alt="PrestigeAkali" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Prestige Coven Akali</p>
+                                    <p class="desc">Arriving clad in a bold and sporty body suit, Akali's gala attire has us all spellbound. Subversive and on the cutting edge of fashion, she's fierce and redefines how we think of the wicked witch of the woods.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ashe-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Ashe.jpg" alt="Ashe" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Ashe</p>
+                                    <p class="desc">They came to Ashe in a bone-deep chill—the frost of the Jet-Black Ibex, entombing the world in ice. She descended the mountain and brought a harrowing winter with her… but that is not the only thing that followed Ashe into the night. The mountain itself rumbles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Camille-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Camille.jpg" alt="Camille" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Camille</p>
+                                    <p class="desc">They came to Camille as if in some dark slumber—whispers of the Ebony Ram, and the nameless things tumbling up from long-forgotten sepulchers. Her throat full of hearsay, she cuts down the vestiges of the new world, seeding the earth with the magics and witchery of her ancient, grinning masters.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Cassiopeia-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Cassiopeia.jpg" alt="Cassiopeia" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Cassiopeia</p>
+                                    <p class="desc">They came to Cassiopeia as a shadow within the fog—the shape of the Silver Cobra, slithering up from the numberless graves of the ancient dead. She now stalks the ruling families of humankind, her sculpture garden full of wayward souls who strayed too far from the safety of castle walls, now eternally frozen in the throes of terror.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Elise-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Elise.jpg" alt="Elise" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Elise</p>
+                                    <p class="desc">They came to Elise long ago, crawling through the underbrush, their many eyes locked with hers as a deal was made. The unfathomable powers of an Old God for her devotion and humanity. Reborn in the image of an arachnoid deity, Elise lingers along the edges of the Elderwood, enticing to their doom all those foolish enough to believe her a mere folktale.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Evelynn-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Evelynn.jpg" alt="Evelynn" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Evelynn</p>
+                                    <p class="desc">The covens of the south join their sisters for the great resurrection, as old things stir once more, and old grudges are at last repaid in full. Evelynn, daughter of the Great Harrier, gladly joins her sisters for the darkness to come—a trail of brutality and death always in her wake.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Leblanc-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Leblanc.jpg" alt="Leblanc" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Leblanc</p>
+                                    <p class="desc">They came to LeBlanc as if in some forgotten melody -- songs of the Black Crane, and its titanic heart long-imprisoned within the deepest reaches of the Elderwood. Her sisters fell before the forest's defenders, but LeBlanc did find her prize... and now her patron has begun to wake, stirring itself from a dreamless slumber of unhallowed centuries. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lissandra-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Lissandra.jpg" alt="Lissandra" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Lissandra</p>
+                                    <p class="desc">They came to Lissandra as if in some waking dream—visions of the Ivory Stag, and the old magics long lost to antiquity. Even now, the ageless witch resides among those twisted shadows of the old growth, awaiting the day her dead gods spill forth from their rotten and accursed graves.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Morgana-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Morgana.jpg" alt="Morgana" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Morgana</p>
+                                    <p class="desc">Queen of the coven, and patron of that called Ashen Owl. Morgana worshipped the Old Gods, and wept when they were slain -- betrayed when her sister murdered the primordial sun and delivered its power to an army of witch-knights. Now Morgana has returned to end the reign of mankind, returning the world's true lords to their rightful, mouldering thrones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nami-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Nami.jpg" alt="Nami" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Nami</p>
+                                    <p class="desc">They called to Nami from the deep, their voice carrying a promise of power greater than any she had ever known. All Nami needed to do was feed it. She has now forsaken her oaths, her coven, spending endless nights lurking just below the murky waterways of the Elderwood in search of her next sacrifice to the Leviathan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nilah-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Nilah.jpg" alt="Nilah" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Nilah</p>
+                                    <p class="desc">They came to Nilah in a cacophony of cracking brambles and bone, offering unbridled talents in exchange for her loyalty. She obliged by filling a vessel with the deep crimson that dripped from the thorns. She now carries with her this godly relic along with the knowledge that she is destined for more than this coven can ever give.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Syndra-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Syndra.jpg" alt="Syndra" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Coven Syndra</p>
+                                    <p class="desc">They came to Syndra in a thundering flutter of carrion wings, beckoning her to free herself from the limitations of mortals. Following the wings' foul wind to a ritual site, she along with another witch awakened the Horned King from his putrid tomb. She now seeks retribution against all who stand against the Coven or the Old Gods.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ivern-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Ivern.jpg" alt="Ivern" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Old God Ivern</p>
+                                    <p class="desc">A nightmarish totem forged of witchcraft and forbidden incantations, Ivern stood among the Old Gods in the days before their destruction. Left inert for hundreds of years, he has risen along with his brethren to annihilate the paltry works of man.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Malphite-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Malphite.jpg" alt="Malphite" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Old God Malphite</p>
+                                    <p class="desc">Appearing to mortals as a Jet-Black Ibex, Malphite was an Old God of the mountain slain by the Eclipse order and cast down onto the rocks below. Death did not claim him, but the mountain did—and now he rises in its hulking earthen form, the land itself twisted with hatred and consumed by new and terrible hungers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Mordekaiser-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Mordekaiser.jpg" alt="Mordekaiser" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Old God Mordekaiser</p>
+                                    <p class="desc">Once known as the Horned King, Old God Mordekaiser turned that which was once dead to his cause, using their shambling forms to topple kingdoms and claim their lands as his own. Before he was slain by the Eclipse Knights, he swore that when he returned to this world, they would all bend to his will and take to the frontlines of his undead army.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nocturne-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Nocturne.jpg" alt="Nocturne" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Old God Nocturne</p>
+                                    <p class="desc">The great corpses of the Old Gods fed the land, and in time even the Elderwood would come to grow over their putrid rot–hiding it, perhaps, for a time. But the Gods never truly died and, with the resurgence of the Coven, one has risen again–Nocturne, the Eternal Nightmare.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Volibear-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Volibear.jpg" alt="Volibear" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">The Thousand-Pierced Bear</p>
+                                    <p class="desc">Ancient Freljordian legends speak of spirit walkers consumed by the true spirit of the unrelenting bear—a force older than the Freljord itself. Those who dare to invoke its name cannot fathom the terrible, primal power they call down upon themselves. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Warwick-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Coven/Warwick.jpg" alt="Warwick" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Old God Warwick</p>
+                                    <p class="desc">Once known as Father Wolf, Warwick roamed the wood and reveled in moonlight's bloody hunt. The Eclipse Order thought to slay him in his den and end his barbarity—but death means nothing to Old Gods, and he did not stay down. Father Wolf howls into the night once more, now slavering for the taste of human flesh.</p>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+
+

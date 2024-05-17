@@ -1,0 +1,241 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.PorcelainModel
+@{
+    ViewData["Title"] = "Porcelain";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">Cosmic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">Coven</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">High Noon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain"
+                                   style="text-align:center; color:lightblue; text-shadow: 0 0 3px BLUE, 0 0 5px BLUE;">Porcelain
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee" style="color: #C9AA71;">Bee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center; color:lightblue; text-shadow: 0 0 3px BLUE, 0 0 5px BLUE;" id="#">LUNAR NEW YEAR / PORCELAIN</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Amumu-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Amumu.jpg" alt="Amumu" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Porcelain Amumu</p>
+                                    <p class="desc">Eternally young due to his bond with the Rat Relic, Amumu's innocence belies centuries of existence. He's been lonely in ages past, but no more: Lux is like his big sister, and Kindred is his… Kindred? Companionship hasn't stopped his occasional tantrums, of course, but at least now there's someone to shine his porcelain eyes after a nice cathartic cry.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Aurelion Sol-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/AurelionSol.jpg" alt="Aurelion Sol" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Aurelion Sol</p>
+                                    <p class="desc">When the Zodiac forged their relics, Aurelion Sol was there. With him, eleven others: the first to be humbled with the task of guarding the artifacts, the first to be granted their powers. Centuries later, Aurelion Sol is summoned forth by his draconic descendant, desperate for his help against an ancient threat with which he is all too familiar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Darius-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Darius.jpg" alt="Darius" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Darius</p>
+                                    <p class="desc">Darius has watched the modern-day protector of the Tiger Relic from afar, silently judging his descendant. Back when he was protector, the Tiger was a symbol of pride... Now it seems the Zodiac will hand off the duty to anyone with a minor in archeology. Returned to physical form, Darius believes he can show this kid a thing or two.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ezreal-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Ezreal.jpg" alt="Ezreal" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Ezreal</p>
+                                    <p class="desc">After accidentally unleashing an ancient evil sorceress while doing research in the university archive, Ezreal narrowly escaped certain death when Lux and the spirit of the Tiger Relic stepped in to save him. Though he is new to the world of magic, Ezreal has joined the Protectors— determined to help solve the problem he (inadvertently) caused.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Graves-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Graves.jpg" alt="Graves" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Graves</p>
+                                    <p class="desc">Not long after gunpowder was invented, the Zodiac searched for a new protector of the Dragon Relic. Though ancient and wise, the gods struggled to find someone worthy, so they settled for Malcolm Graves. Eventually his expertise in firepower was pointed in the right direction (away from all the breakable vases).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Irelia-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Irelia.jpg" alt="Irelia" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Irelia</p>
+                                    <p class="desc">Irelia was dedicated to the preservation of ancient relics long before she became a protector. Her first year at university, she interned at the renowned Archeology Institute. It was the highlight of her short life... until she was granted mythical powers by the Ram Relic and thrust into a centuries-old war. Schoolwork sort of pales in comparison.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Kindred-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Kindred.jpg" alt="Kindred" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Kindred</p>
+                                    <p class="desc">Once a skilled hunter and her fierce hound, the two were so bonded that their souls remained together when they were preserved inside the Dog Zodiac Relic. Now they are two halves of a whole, mentoring generations of Protectors like Lux and Amumu and standing guard eternally over the ancient magic that keeps them alive. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lux-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Lux.jpg" alt="Lux" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Lux</p>
+                                    <p class="desc">As the current leader of the Protectors and wielder of the Rabbit Relic, Lux is determined to keep up her sunny disposition in spite of everything: her own arduous sorcery training, the newbie archaeologist who stumbled into their ranks, and the sudden threat of an awakened evil now out for vengeance. She's got this… right? Right. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Miss Fortune-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/MF.jpg" alt="Miss Fortune" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Miss Fortune</p>
+                                    <p class="desc">Through the centuries, humans have tried to replicate the power of dragon's breath. With gunpowder came the cannon, which was finessed into smaller and more refined variants until it was ultimately perfected by Sarah Fortune's mother. Her dual dragon-pistols carry on the legacy of not only her own family, but of the creatures of myth themselves</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Morgana-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Morgana.jpg" alt="Morgana" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Morgana</p>
+                                    <p class="desc">There is no one who comprehends the power of the sorceress Lissandra more than Morgana. The magic that bound Lissandra to her relic came at a cost: the protector who uttered the words would be trapped as well. Morgana made this sacrifice, the wings of her Rooster Relic wrapping her in a porcelain cocoon for millennia. Awake once more, she seeks revenge.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lissandra-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Porcelain/Lissandra.jpg" alt="Lissandra" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Pocelain Lissandra</p>
+                                    <p class="desc">Long ago, the sorceress Lissandra stole the Snake Relic from the ancient Protectors in a bid to gain immortality. Cast down and sealed away for her crimes, Lissandra spent centuries of solitude scheming a way to take all twelve Zodiac Relics for herself, waiting for the perfect time to strike... And now Ezreal has given her the chance. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+
+

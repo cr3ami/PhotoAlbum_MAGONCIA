@@ -1,0 +1,252 @@
+﻿@page
+@model PhotoAlbum_MAGONCIA.Pages.BeeModel
+@{
+    ViewData["Title"] = "BEE";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~css/bootstrap.css" rel="stylesheet"> <!--bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <style>
+        .myImages {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            padding-top: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 24px 36px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body id="background">
+    <main>
+        <div class="logo">
+            <img src="~/resources/images/league-of-legends-logo.png" style="width:30%" />
+        </div>
+        <div class="container" style="background-color: #060E1F">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+                <div class="container" style="background-color: #061E36; border-radius: 7px;">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Index" style="color: #C9AA71;">Albums></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/SunkissedSummer" style="color: #C9AA71;">Sunkissed Summer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Cosmic" style="color: #C9AA71;">Cosmic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Coven" style="color: #C9AA71;">Coven</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Highnoon" style="color: #C9AA71;">High Noon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Project" style="color: #C9AA71;">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Spiritblossom" style="color: #C9AA71;">Spirit Blossom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Porcelain" style="color: #C9AA71;">Porcelain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-page="/Bee"
+                                   style="text-align:center; color:orange; text-shadow: 0 0 3px darkorange, 0 0 5px red; ">Bee
+                               </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="album" style="background-color: #061E36; padding-top:20px; border-radius: 7px;">
+                <h1 style="text-align:center; color:orange; text-shadow: 0 0 3px darkorange, 0 0 5px red; " id="#">BEE (Universe)</h1>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <!--Singed-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Singed.jpg" alt="Singed" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Beekeeper Singed</p>
+                                    <p class="desc">At first Singed wasn't certain he wanted to be a master beekeeper. But the moment he put on the protective suit, he knew it was destiny. Nowadays he can be found tending his hives, eating honey, or flipping any hapless wanderers that stop to gaze upon his work.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Blitzcrank-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Blitzcrank.jpg" alt="Blitzcrank" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Beezcrank</p>
+                                    <p class="desc">Beezcrank has a reputation for getting his bee-infantry into sticky situations. Probably because of that giant honey-comb mech-arm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Heimerdinger-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Heimerdinger.jpg" alt="Heimerdinger" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Heimerstinger</p>
+                                    <p class="desc">Now isn't he just the buzziest little worker bee?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Kog'Maw-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Kog'Maw.jpg" alt="Kog'Maw" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Bee'Maw</p>
+                                    <p class="desc">Snowballing lane won't bring back your precious honey!</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Malzahar-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Malzahar.jpg" alt="Malzahar" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+						        <div class="card-body">
+                                    <p style="text-align:center;">Beezahar</p>
+                                    <p class="desc">Open your true mind, and beelieve.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Nunu-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Nunu.jpg" alt="Nunu" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Nunu & Beelump</p>
+                                    <p class="desc">They're like two bees in a pod. Err… in a hive?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Orianna-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Orianna.jpg" alt="Orianna" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Orbeeanna</p>
+                                    <p class="desc">Careful not to get honey caught in those gears!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Teemo-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Teemo.jpg" alt="Teemo" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Beemo</p>
+                                    <p class="desc">To Beemo, or not to Beemo? That is the question.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Veigar-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Veigar.jpg" alt="Veigar" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">King Beegar</p>
+                                    <p class="desc">Beegar's waited a whole 10 days (that's a long time in bee-years) for his moment to strike. It's finally here, and the Queen Bee's crown is in his sights. Long live the Bee-sistance!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Vel'Koz-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Vel'Koz.jpg" alt="Vel'Koz'" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Bee'Koz</p>
+                                    <p class="desc">Controllable tentacles made out of honey? That's bee-nius!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Yuumi-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Yuumi.jpg" alt="Yuumi" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">Yuubee</p>
+                                    <p class="desc">Hey… there's a bee on you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ziggs-->
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="~/Resources/Images/Bee/Ziggs.jpg" alt="Ziggs" id="myImg" class="myImages" alt="Ai" width="100%" height="225" />
+                                <div class="card-body">
+                                    <p style="text-align:center;">BZZZiggs</p>
+                                    <p class="desc">According to all known laws of apiculture, bees shouldn't be given explosives. Hey! Put that bouncing bomb down, bee!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            /* Dark mode script */
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </main>
+
+</body>
+</html>
+
+
